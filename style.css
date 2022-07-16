@@ -1,0 +1,450 @@
+body{
+    height: 100hv;
+    width: 100vw;
+    margin: 0;
+    background-color: ivory;
+    display: flex;
+}
+.resume_body{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,rgba(0, 0, 0, 0.25) 0px 54px 55px,rgba(0, 0, 0, 0.25) 0px 54px 55px;
+    width: 50rem;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    z-index: -2;
+}
+
+
+
+
+.contact{
+    background-color: #303030;
+    position: relative;
+    z-index: -1;
+}
+.useless{
+    position: absolute;
+    right: 0;
+}
+.personal, .social, .award{
+    margin-bottom: 2em
+}
+
+
+
+.contact h5, .contact p, .contact a {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-top:2em;
+    margin-bottom: .5em;
+
+}
+
+.contact_list_info h5{
+    font-size: .8em;
+}
+.contact p{
+    font-size: .6em;
+}
+
+.contact a{
+    font-size: .6em;
+}
+.contact a:hover{
+    color:gray;
+}
+
+
+
+
+.contact_title{
+    right:0em;
+}
+.contact_line{
+    height: .07em;
+    width: 12em;
+    background-color: white;
+    animation: left-to-right ;
+    animation-duration: 1.5s;
+}
+
+
+
+
+
+.info_ul, .social_ul, .award_ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.li{
+    
+    display: flex;
+    align-items: center;
+    margin-top: 1.2em;
+    animation: contact_slide;
+    animation-duration: 1s;
+    
+    
+}
+.contact_list_info{
+    margin-left: 1.5em;
+    width: 8em;
+    
+}
+.contact_list_info h5, .contact_list_info p{
+    margin:0;
+
+}
+.contact_list_info h5{
+    margin-bottom: 1px;
+}
+.contact_list_info p, .contact_list_info a{
+    color: 	#C0C0C0;
+}
+
+.contact_title{
+    margin-bottom: 1.6em;
+}
+
+
+
+.picture{
+    margin:auto;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    height: 8em;
+    width: 8em;
+    border: solid 1px white;
+    border-radius: 50%;
+}
+
+.social_ul p:hover{
+    cursor: pointer;
+    color: 	grey;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header{
+    font-family:'Montserrat', sans-serif ;
+    animation: general_list;
+    animation-duration: 1s;
+}
+.header h1{
+    margin-bottom: 5px;;
+}
+.header h4{
+    margin-top: 0;
+}
+
+
+.general_title{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+.general_title_line{
+    width: 400px;
+    height: 1px;
+    background-color: #303030;
+    animation: left-right;
+    animation-duration: 1.5s;
+
+}
+.general_header h4{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5px;
+    margin-top:5px;
+    
+}
+.general_header{
+    margin-left: 15px;
+}
+
+
+
+
+.general{
+    padding:25px;
+    background-color: white;
+    overflow: hidden;
+}
+.general_info{
+    display: flex;
+}
+.general_time{
+    width: 2px;
+    height: 100%;
+    margin-left: 12px;
+}
+.general_time_line_work{
+    width: 1px;
+    height: 185px;
+    background-color: #303030;
+    animation: time_work;
+    animation-duration: 1.5s;
+}
+.general_time_line_edu{
+    width: 1px;
+    height: 105px;
+    background-color: #303030;
+    animation: time_edu;
+    animation-duration: 1.5s;
+}
+
+
+
+
+
+.work_ul, .edu_ul{
+    list-style: none;
+    padding-left: 25px;
+    position: relative;
+}
+.dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: solid 1.5px black;
+    background-color: white;
+    position: absolute;
+    left: -4.5px;
+}
+
+
+
+
+
+
+.general_list_main{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    font-family: 'Montserrat', sans-serif;
+    animation: general_list;
+    animation-duration: 1s;
+}
+.general_list_main h5, .general_list_main h6, .general_list_main p{
+    margin:0;
+}
+.general_list_main h5{
+    font-size: 13px;;
+}
+.general_list_main h6{
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.general_list_main p{
+    font-size: 11px;
+}
+.general_list_info{
+    margin-left: 20px;
+}
+.general_list{
+    display: flex;
+    margin-bottom: 20px;
+
+}
+.general_date h5{
+    font-size: 12px;
+}
+
+
+
+
+
+/* Skill Section*/
+.Skill_Bar{
+    height: 6px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+}
+.Skill_Fill{
+    height:100%;
+    width:50%;
+    border-radius: 5px;
+    background-color: #696969;
+}
+
+/* lists - skills */
+.Skill_Lists{
+    display: flex;
+}
+.Skill_Lists ul{
+    padding:0;
+    margin:25px;
+    margin-top: 0;
+}
+.Skill_li_div{
+    display: flex; 
+    flex-direction: column;
+}
+.skill_ul, .skill_ul_1{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding-left: 25px;
+    animation: skill_list;
+    animation-duration: 1s;
+}
+.skill_ul h6, .skill_ul_1 h6{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.skill_ul_1{
+    margin-right: 55px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 780px){
+    .resume_body{
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,rgba(0, 0, 0, 0.25) 0px 54px 55px,rgba(0, 0, 0, 0.25) 0px 54px 55px;
+    
+    
+    
+    
+        width: 40rem;
+        margin:auto;
+    
+    
+        display: grid;
+        grid-template-columns: 30% 70%;
+
+
+    }
+    .useless{
+        position: absolute;
+        right: 0px;
+        width: 09em;
+    }
+    .contact_list_info {
+        margin-left: 1.5em;
+        width: 6em;
+    }
+
+    .work{
+        width: 300px;
+    }
+    .general_time_line_work{
+        width: 1px;
+        height: 255px;
+        background-color: #303030;
+    }
+    
+    .education{
+        width: 350px;
+    }
+    .general_time_line_edu{
+        width: 1px;
+        height: 120px;
+        background-color: #303030;
+    }
+    .skill_ul_1{
+        margin-right: 10px;
+    }
+    .general_title_line{
+        width: 300px;
+        height: 1px;
+        background-color: #303030;
+        animation: left-right;
+        animation-duration: 1.5s;
+    
+    }
+
+}
+
+
+
+
+
+@keyframes left-to-right{
+    0%{
+        width: 0em;
+    }
+    100%{
+        width: 12em;
+    }
+}
+@keyframes time_work{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 185px;
+    }
+}
+@keyframes time_edu{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 105px;
+    }
+}
+
+@keyframes left-right{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 400px;
+    }
+}
+@keyframes contact_slide{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 100;
+        transform: translateX(0px);
+    }
+}
+@keyframes general_list{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 100;
+        transform: translateX(0px);
+    }
+}
+@keyframes skill_list{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 100;
+        transform: translateX(0px);
+    }
+}
